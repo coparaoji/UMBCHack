@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/settingsBar3"
+        android:layout_width="137dp"
+        android:layout_height="57dp"
+        android:background="#FFFFFF"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/homeBar"
+        android:layout_width="143dp"
+        android:layout_height="57dp"
+        android:background="#FFFFFF"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/homeText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/karla_bold"
+        android:text="Home"
+        android:textColor="#C13357"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/calendarText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/userIcon3"
+        android:layout_width="134dp"
+        android:layout_height="58dp"
+        android:background="#CF4A6A"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/calendarText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/karla_bold"
+        android:text="Calendar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/userIcon3"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="175dp" />
+
+
+    <LinearLayout
+        android:id="@+id/bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="671dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#C23257" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/myRectangleView"
+        android:layout_width="296dp"
+        android:layout_height="368dp"
+        android:background="@drawable/toplogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    `
+
+    <View
+        android:id="@+id/bottomBlob"
+        android:layout_width="339dp"
+        android:layout_height="124dp"
+        android:background="@drawable/blob"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="547dp" />
+
+    <View
+        android:id="@+id/bottomBlob2"
+        android:layout_width="173dp"
+        android:layout_height="161dp"
+        android:background="@drawable/blob"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="454dp" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="196dp" />
+
+
+    <ImageView
+        android:id="@+id/addEvent"
+        android:layout_width="43dp"
+        android:layout_height="44dp"
+        app:srcCompat="@drawable/addition"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="152dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calendar"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="183dp"
+        tools:layout_editor_absoluteY="129dp" />
+
+    <TextView
+        android:id="@+id/settingsTextv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/karla_bold"
+        android:text="Settings"
+        android:textColor="#C13357"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="318dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

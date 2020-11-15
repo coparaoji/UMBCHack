@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>activity_login.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000000; font-style: italic;}
+.s1 { color: #0000ff; font-weight: bold;}
+.s2 { color: #000000;}
+.s3 { color: #008000; font-weight: bold;}
+.s4 { color: #000080; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+activity_login.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s3">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s3">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+&lt;<span class="s4">androidx.constraintlayout.widget.ConstraintLayout </span><span class="s1">xmlns:android</span><span class="s3">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:app</span><span class="s3">=&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="s1">xmlns:tools</span><span class="s3">=&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="s1">android:id</span><span class="s3">=&quot;@+id/container&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+    <span class="s1">android:background</span><span class="s3">=&quot;#FFFFFF&quot;</span>
+    <span class="s1">android:paddingLeft</span><span class="s3">=&quot;@dimen/activity_horizontal_margin&quot;</span>
+    <span class="s1">android:paddingTop</span><span class="s3">=&quot;@dimen/activity_vertical_margin&quot;</span>
+    <span class="s1">android:paddingRight</span><span class="s3">=&quot;@dimen/activity_horizontal_margin&quot;</span>
+    <span class="s1">android:paddingBottom</span><span class="s3">=&quot;@dimen/activity_vertical_margin&quot;</span>
+    <span class="s1">tools:context</span><span class="s3">=&quot;.ui.login.LoginActivity&quot;</span>&gt;
+
+
+    &lt;<span class="s4">TextView</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/LogInText&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s3">=&quot;32dp&quot;</span>
+        <span class="s1">android:layout_marginLeft</span><span class="s3">=&quot;32dp&quot;</span>
+        <span class="s1">android:layout_marginEnd</span><span class="s3">=&quot;32dp&quot;</span>
+        <span class="s1">android:layout_marginRight</span><span class="s3">=&quot;32dp&quot;</span>
+        <span class="s1">android:background</span><span class="s3">=&quot;#00FFFFFF&quot;</span>
+        <span class="s1">android:fontFamily</span><span class="s3">=&quot;@font/karla_bold&quot;</span>
+        <span class="s1">android:gravity</span><span class="s3">=&quot;center&quot;</span>
+        <span class="s1">android:text</span><span class="s3">=&quot;Welcome Back&quot;</span>
+        <span class="s1">android:textColor</span><span class="s3">=&quot;#040404&quot;</span>
+        <span class="s1">android:textSize</span><span class="s3">=&quot;40dp&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s1">tools:layout_editor_absoluteY</span><span class="s3">=&quot;190dp&quot; </span>/&gt;
+
+    &lt;<span class="s4">EditText</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/EmailAddressInput&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;35dp&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s3">=&quot;80dp&quot;</span>
+        <span class="s1">android:layout_marginLeft</span><span class="s3">=&quot;80dp&quot;</span>
+        <span class="s1">android:layout_marginEnd</span><span class="s3">=&quot;80dp&quot;</span>
+        <span class="s1">android:layout_marginRight</span><span class="s3">=&quot;80dp&quot;</span>
+        <span class="s1">android:background</span><span class="s3">=&quot;@drawable/edittextbackground&quot;</span>
+        <span class="s1">android:ems</span><span class="s3">=&quot;12&quot;</span>
+        <span class="s1">android:hint</span><span class="s3">=&quot;  Email Address&quot;</span>
+        <span class="s1">android:inputType</span><span class="s3">=&quot;textEmailAddress&quot;</span>
+        <span class="s1">android:textSize</span><span class="s3">=&quot;20dpdp&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s3">=&quot;1.0&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s1">tools:layout_editor_absoluteY</span><span class="s3">=&quot;253dp&quot; </span>/&gt;
+
+    &lt;<span class="s4">EditText</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/PasswordInput&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;35dp&quot;</span>
+        <span class="s1">android:layout_marginStart</span><span class="s3">=&quot;80dp&quot;</span>
+        <span class="s1">android:layout_marginLeft</span><span class="s3">=&quot;80dp&quot;</span>
+        <span class="s1">android:layout_marginEnd</span><span class="s3">=&quot;80dp&quot;</span>
+        <span class="s1">android:layout_marginRight</span><span class="s3">=&quot;80dp&quot;</span>
+        <span class="s1">android:background</span><span class="s3">=&quot;@drawable/edittextbackground&quot;</span>
+        <span class="s1">android:ems</span><span class="s3">=&quot;12&quot;</span>
+        <span class="s1">android:hint</span><span class="s3">=&quot;  Password&quot;</span>
+        <span class="s1">android:inputType</span><span class="s3">=&quot;textPassword&quot;</span>
+        <span class="s1">android:textSize</span><span class="s3">=&quot;20dpdp&quot;</span>
+        <span class="s1">app:layout_constraintEnd_toEndOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s1">app:layout_constraintHorizontal_bias</span><span class="s3">=&quot;1.0&quot;</span>
+        <span class="s1">app:layout_constraintStart_toStartOf</span><span class="s3">=&quot;parent&quot;</span>
+        <span class="s1">tools:layout_editor_absoluteY</span><span class="s3">=&quot;126dp&quot; </span>/&gt;
+
+    &lt;<span class="s4">Button</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/LogInSubmit&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:background</span><span class="s3">=&quot;@drawable/edittextbackground&quot;</span>
+        <span class="s1">android:text</span><span class="s3">=&quot;Log In&quot;</span>
+        <span class="s1">app:backgroundTint</span><span class="s3">=&quot;#000000&quot;</span>
+        <span class="s1">tools:layout_editor_absoluteX</span><span class="s3">=&quot;143dp&quot;</span>
+        <span class="s1">tools:layout_editor_absoluteY</span><span class="s3">=&quot;44dp&quot; </span>/&gt;
+
+    &lt;<span class="s4">Button</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/newAccount&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:text</span><span class="s3">=&quot;New Account? Sign up&quot;</span>
+        <span class="s1">android:textColor</span><span class="s3">=&quot;#000000&quot;</span>
+        <span class="s1">app:backgroundTint</span><span class="s3">=&quot;#FFFFFF&quot;</span>
+        <span class="s1">tools:layout_editor_absoluteX</span><span class="s3">=&quot;74dp&quot;</span>
+        <span class="s1">tools:layout_editor_absoluteY</span><span class="s3">=&quot;-7dp&quot; </span>/&gt;
+
+    &lt;<span class="s4">Button</span>
+        <span class="s1">android:id</span><span class="s3">=&quot;@+id/forgotPassword&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:text</span><span class="s3">=&quot;Forgot Password?&quot;</span>
+        <span class="s1">android:textColor</span><span class="s3">=&quot;#000000&quot;</span>
+        <span class="s1">app:backgroundTint</span><span class="s3">=&quot;#FFFFFF&quot;</span>
+        <span class="s1">tools:layout_editor_absoluteX</span><span class="s3">=&quot;171dp&quot;</span>
+        <span class="s1">tools:layout_editor_absoluteY</span><span class="s3">=&quot;94dp&quot; </span>/&gt;
+
+&lt;/<span class="s4">androidx.constraintlayout.widget.ConstraintLayout</span>&gt;</pre>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/homeBar"
+        android:layout_width="137dp"
+        android:layout_height="57dp"
+        android:background="#FFFFFF"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/calendarBar"
+        android:layout_width="143dp"
+        android:layout_height="57dp"
+        android:background="#DA627D"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/myRectangleView"
+        android:layout_width="422dp"
+        android:layout_height="163dp"
+        android:layout_marginBottom="446dp"
+        android:background="@drawable/rectangle"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="523dp"
+        android:fontFamily="@font/karla_bold"
+        android:text="Welcome Back"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupName"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="54dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:srcCompat="@drawable/addition"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="341dp" />
+
+    <TextView
+        android:id="@+id/groupName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="71dp"
+        android:background="@drawable/rectanglev2"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Group Name"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/homeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/karla_bold"
+        android:text="Home"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/calendarButton"
+        android:layout_width="117dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="Calendar"
+        android:textColor="#E91E63"
+        android:textColorLink="#CF4A6A"
+        android:textSize="14sp"
+        app:backgroundTint="#FFFFFF"
+        app:iconPadding="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/homeBar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/calendarBar" />
+
+    <TextView
+        android:id="@+id/settingsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/karla_bold"
+        android:text="Settings"
+        android:textColor="#CF4A6A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/homeBar"
+        app:layout_constraintStart_toEndOf="@+id/calendarButton" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="57dp"
+        android:background="#C23257"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/newEventButton"
+        android:layout_width="50dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="116dp"
+        android:visibility="invisible"
+        app:backgroundTint="@color/cardview_shadow_end_color"
+        app:iconTint="@color/cardview_shadow_end_color"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:rippleColor="@color/cardview_shadow_end_color"
+        tools:layout_editor_absoluteX="291dp"
+        tools:visibility="invisible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
